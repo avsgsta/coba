@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Balai Karantina</title>
+<!--   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml"> -->
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+        <img src="./assets/images/Group_2.png" alt="karantina">
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+        <img src="./assets/images/Group_2.png" alt="karantina" class="logo-burger">
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Beranda</a>
+          </li>
+          
+          <li class="dropdown">
+            <a href="#" class="dropbtn navbar-link">Tentang Kami</a>
+              <div class="dropdown-content">
+                <a href="./tentang/sejarah.html">Sejarah</a>
+                <a href="./tentang/profilOrganisasi.html">Struktur Organisasi</a>
+                <a href="./tentang/visi-misi.html">Visi & Misi</a>
+                <a href="./tentang/unitPelaksana.html">Unit Pelaksana Teknis</a>
+                <a href="./tentang/tugas.html">Tugas & Fungsi</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropbtn navbar-link">Prosedur Karantina</a>
+              <div class="dropdown-content">
+                <a href="#">SPS dan Naskah Perjanjian</a>
+                <a href="#">Ketentuan Ekspor Hewan dan Produk Hewan</a>
+                <a href="#">Ketentuan Impor Hewan dan Hewan</a>
+                <a href="#">Ketentuan Ekspor Tumbuhan dan Produk Tumbuhan</a>
+                <a href="#">Ketentuan Impor Tumbuhan dan Produk Tumbuhan</a>
+                <a href="#">Pengawasan dan Penindakan</a>
+                <a href="#">Prosedur Pengajuan Aplikasi IKH</a>
+                <a href="#">Antar area Hewan dan Tumbuhan</a>
+                <a href="#">Pemasukan Agens Hayati </a>
+            </div>
+          </li>
+    
+          <li class="dropdown">
+            <a href="#" class="dropbtn navbar-link">Basis Data</a>
+              <div class="dropdown-content">
+                <a href="#">SDM Karantina</a>
+                <a href="#">Daftar Hewan Penyakit Pada Hewan</a>
+                <a href="#">Daftar Tumbuhan Penyakit Pada Tumbuhan</a>
+                <a href="#">Daftar Perusahaan Yang Terigentrasi Tumbuhan</a>
+                <a href="#">Daftar Instalasi Karantina Hewan</a>
+                <a href="#">Hasil Analisis Risiko</a>
+            </div>
+          </li>
+
+          <li class="dropdown">
+            <a href="#" class="dropbtn navbar-link">Informasi Publik</a>
+              <div class="dropdown-content">
+                <a href="#">Pengumuman</a>
+                <a href="#">Informasi Berkala</a>
+                <a href="#">Informasi Serta Merta</a>
+                <a href="#">Informasi Setiap Saat</a>
+                <a href="#">Informasi Setiap Saat</a>
+                <a href="#">Informasi Setiap Saat</a>
+                <a href="#">Prosedur Evakuasi Keadaan Darurat</a>
+            </div>
+          </li>
+          
+        </ul>
+
+        <div class="wrapper">
+          <a href="karantinapapuabaratdaya@karantinaindonesia.go.id" class="contact-link">karantinapapuabaratdaya@go.id</a>
+
+          <a href="#" class="contact-link">00 (123) 456 78 90</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://x.com/karantina_PBD" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.facebook.com/karantinapapuabaratdaya" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/@karantinapapuabaratdaya" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/karantinapapuabaratdaya/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/@karantinapapuabaratdaya" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-color : #123138">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Jaga Papua Barat Daya  Karantina Kuat</h1>
+
+            <p class="hero-text">
+              kuat, kompeten, Unggul, Amanah, dan Tangguh
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#service" class="btn btn-primary">Explore Now</a>
+
+              <a href="#" class="btn btn-outline">Contact Us</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/ikan_1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/hewan_2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/pemusnahan.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+                  </div>
+
+                </li>
+                
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/lab_3.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+                  </div>
+
+                </li>
+                
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/darah_ayam.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/tumbuhan_1.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+     <section class="section service" aria-labelledby="service-label" id="service">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">Layanan Kami</p>
+
+          <h2 class="h2 section-title">
+            Layanan Kami Yang Kami Berikan Berdasarkan Visi dan Misi Kami
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="school-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Kompeten </h3>
+
+                <p class="card-text">
+                  Kami Secara Kompeten Siap dan Sigap 
+                  Dalam Melindungi Kelestarian Sumber Daya Alami di Papua Barat Daya
+                </p>
+<!--<a href="#" class="btn-text"> <span class="span">Selengkapnya</span>
+
+  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+</a> -->
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="podium-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Unggul</h3>
+
+                <p class="card-text">
+                  Kami Berkomitmen Untuk Terus Meningkatkan Pelayanan dan Menjaga Kelestarian Sumber Daya Alam
+                </p>
+
+<!--                 <a href="#" class="btn-text">
+  <span class="span">Selengkapnya</span>
+
+  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+</a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Amanah</h3>
+
+                <p class="card-text">
+                  Kami Secara Amanah Bertanggung Jawab Dalam Menjaga Kelestarian Sumber Daya Alam
+                </p>
+
+<!--                 <a href="#" class="btn-text">
+  <span class="span">Selengkapnya</span>
+
+  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+</a> -->
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="earth-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Tangguh</h3>
+
+                <p class="card-text">
+                  Kami Secara Tangguh Menghadapi Berbagai Kondisi Dalam Menjaga Sumber Daya Alam Lain
+                </p>
+
+<!--                 <a href="#" class="btn-text">
+  <span class="span">Selengkapnya</span>
+
+  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+</a> -->
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #FEATURE
+      -->
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-color : #123138">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">
+                  10
+                </span>
+                <span class="span">Penghargaan</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">1</span>
+
+                <span class="span">Fasilitas Lab</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">100</span>
+
+                <span class="span">Jumlah Pegawai</span>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">90</span>
+
+                <span class="span">Pengawan dan Penindakan</span>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+<br>
+<br>
+<br>
+
+      <!-- 
+        - #PROJECT
+      -->
+      
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+        <img src="./assets/images/Group_3.png" alt="karantina">
+
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+    <!-- Popup Chatbot -->
+    <div id="chatbot-popup" class="chat-popup">
+        <div class="chat-header">
+            <span>Chat Bot Badan Karantina</span>
+            <button id="close-btn" class="close-btn">&times;</button>
+        </div>
+        <div id="chat-content" class="chat-content">
+            <!-- Konten chat bot akan muncul di sini -->
+        </div>
+        <div class="chat-footer">
+            <div class="options">
+                <button class="option-btn" data-question="tugas badan karantina">Apa tugas Badan Karantina?</button>
+                <button class="option-btn" data-question="fungsi badan karantina">Apa fungsi Badan Karantina?</button>
+                <button class="option-btn" data-question="lokasi badan karantina">Dimana lokasi Badan Karantina?</button>
+                <button class="option-btn" data-question="kontak badan karantina">Bagaimana cara menghubungi Badan Karantina?</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Tombol untuk membuka Chatbot -->
+    <button id="chat-btn" class="chat-btn">💬</button>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+        <a href="#" class="logo">
+          Balai Karantina
+        </a>
+
+        <p class="footer-text">
+          &copy; 2024 Balai Karantina Papua Barat Daya. <br> All rights reserved.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="https://www.facebook.com/karantinapapuabaratdaya" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://x.com/karantina_PBD" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.tiktok.com/@karantinapapuabaratdaya" class="social-link">
+              <ion-icon name="logo-tiktok"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/karantinapapuabaratdaya/" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.youtube.com/@karantinapapuabaratdaya" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Get in Touch</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            Jl. Selat Sunda (kompleks bandara deo)
+          </address>
+        </li>
+
+        <li>
+          <a href="karantinapapuabaratdaya@karantinaindonesia.go.id" class="footer-link">karantinapapuabaratdaya@karantinaindonesia.go.id</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">0000 222 7878</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Learn More</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Our Story</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Projects</a>
+        </li>
+        
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Our Newsletter</p>
+
+        <p class="footer-text">
+          Subscribe to our newsletter to get our news & deals delivered to you.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Email Address" required class="input-field">
+
+          <button type="submit" class="submit-btn">Join</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
